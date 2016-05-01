@@ -21,14 +21,14 @@ class ShmupWarz() : Game() {
         optionScene = null
         scoreScene = null
         gameScene = null
-        this.setScreen(menuScene)
+        setScreen(menuScene)
     }
 
     fun optionsGame() {
         val sceneLoader = SceneLoader()
         menuScene = null
         optionScene = MenuScene(sceneLoader, OptionUI(this, sceneLoader))
-        this.setScreen(optionScene)
+        setScreen(optionScene)
         scoreScene = null
         gameScene = null
     }
@@ -38,7 +38,7 @@ class ShmupWarz() : Game() {
         menuScene = null
         optionScene = null
         scoreScene = MenuScene(sceneLoader, ScoreUI(this, sceneLoader))
-        this.setScreen(scoreScene)
+        setScreen(scoreScene)
         gameScene = null
     }
 
@@ -47,7 +47,7 @@ class ShmupWarz() : Game() {
         optionScene = null
         scoreScene = null
         gameScene = GameScene()
-        this.setScreen(gameScene)
+        setScreen(gameScene)
     }
 
 }

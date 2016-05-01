@@ -18,13 +18,13 @@ buildscript {
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
-}
+}                                                                                                                                                                                           
 repositories {
     mavenCentral()
 }
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    compile files('../entitas-0.0.1.jar')
+    compile project(':entitas-0.0.2')
 }
 sourceSets {
     main.java.srcDirs += 'src/main/kotlin'

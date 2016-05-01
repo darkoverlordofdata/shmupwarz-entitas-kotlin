@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('entitas-0.0.2.jar'))
